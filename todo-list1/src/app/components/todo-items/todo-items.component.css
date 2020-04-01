@@ -1,6 +1,7 @@
 p {
   display: flex;
   justify-content: space-between;
+  margin: 3px 0;
 }
 
 #id {
@@ -16,7 +17,7 @@ button {
   color: #ff69b4;
   padding: 2px 0;
   border-radius: 3px;
-  flex: 2;
+  width: 70px;
 }
 
 #task {
@@ -27,4 +28,8 @@ button {
 #delete {
   border: none;
   flex: 1;
+}
+
+#delete:hover {
+  color: #f00;
 }
