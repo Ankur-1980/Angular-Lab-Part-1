@@ -1,6 +1,8 @@
 <p>
-  <span id="id">{{ todo.id }}.</span>
-  <button id="completed">Complete</button>
-  <span id="task">{{ todo.task }}</span>
-  <button id="delete">X</button>
+  <span class="id">{{ todo.id }}.</span>
+  <button (click)="completed()" *ngIf="!todo.complete" class="completed">
+    Complete
+  </button>
+  <span [ngClass]="onCompletion()" class="task">{{ todo.task }}</span>
+  <button (click)="deleteTask(todo)" class="delete">X</button>
 </p>

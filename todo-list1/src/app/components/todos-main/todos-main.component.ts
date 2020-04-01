@@ -46,4 +46,15 @@ export class TodosMainComponent implements OnInit {
       }
     ];
   }
+
+  deleteTodo(todo: Todo) {
+    this.todos = this.todos.filter(t => t.task !== todo.task);
+    if (this.todos.length < 1) {
+      alert(`Nothing to do!`);
+    }
+  }
+
+  addTodo(todo: Todo) {
+    this.todos.push(todo);
+  }
 }

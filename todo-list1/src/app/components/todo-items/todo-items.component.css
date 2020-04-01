@@ -4,7 +4,7 @@ p {
   margin: 3px 0;
 }
 
-#id {
+.id {
   flex: 0.75;
 }
 button {
@@ -12,7 +12,7 @@ button {
   background-color: #fff;
 }
 
-#completed {
+.completed {
   border: 1px solid #ff69b4;
   color: #ff69b4;
   padding: 2px 0;
@@ -20,16 +20,20 @@ button {
   width: 70px;
 }
 
-#task {
+.if-complete {
+  text-decoration: line-through;
+}
+
+.task {
   flex: 8;
   padding-left: 1rem;
 }
 
-#delete {
+.delete {
   border: none;
   flex: 1;
 }
 
-#delete:hover {
+.delete:hover {
   color: #f00;
 }

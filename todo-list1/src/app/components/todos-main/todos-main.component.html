@@ -1,4 +1,9 @@
-<h2>TODO List</h2>
-<p>A place to store your todos</p>
-
-<app-todo-items *ngFor="let x of todos" [todo]="x"> </app-todo-items>
+<app-header></app-header>
+<app-filter-form></app-filter-form>
+<app-todo-items
+  *ngFor="let x of todos"
+  [todo]="x"
+  (deleteTodo)="deleteTodo($event)"
+>
+</app-todo-items>
+<app-task-input (addTodo)="addTodo($event)"></app-task-input>
