@@ -8,39 +8,39 @@ import { Todo } from '../../interfaces/todo';
 })
 export class TodosMainComponent implements OnInit {
   todos: Todo[];
-  id = 6;
+  id = 1;
 
   constructor() {}
 
   ngOnInit(): void {
     this.todos = [
       {
-        id: 1,
+        id: this.id++,
         task: 'Fold Clothes',
         complete: false
       },
       {
-        id: 2,
+        id: this.id++,
         task: 'Put Clothes in dresser',
         complete: false
       },
       {
-        id: 3,
+        id: this.id++,
         task: 'Relax',
         complete: false
       },
       {
-        id: 4,
+        id: this.id++,
         task: 'Try to pet cat',
         complete: true
       },
       {
-        id: 5,
+        id: this.id++,
         task: 'Pet Dog',
         complete: false
       },
       {
-        id: 6,
+        id: this.id++,
         task: 'Be awesome',
         complete: false
       }
