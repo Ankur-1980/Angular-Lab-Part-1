@@ -1,7 +1,7 @@
 <app-header></app-header>
 <app-filter-form></app-filter-form>
 <app-todo-items
-  *ngFor="let x of todos"
+  *ngFor="let x of todos; index as i"
   [todo]="x"
   (deleteTodo)="deleteTodo($event)"
 >
