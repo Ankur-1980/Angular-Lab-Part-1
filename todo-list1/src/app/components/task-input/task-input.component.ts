@@ -6,10 +6,10 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./task-input.component.css']
 })
 export class TaskInputComponent implements OnInit {
-  @Output() addTodo: EventEmitter<any> = new EventEmitter();
+  @Output() addTasks: EventEmitter<any> = new EventEmitter();
 
   task: string;
-  id: number = 6;
+  id: number = 1;
 
   constructor() {}
 
@@ -22,6 +22,6 @@ export class TaskInputComponent implements OnInit {
       completed: false
     };
 
-    this.addTodo.emit(todo);
+    this.addTasks.emit(todo);
   }
 }

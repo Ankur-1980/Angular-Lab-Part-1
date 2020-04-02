@@ -1,9 +1,9 @@
 <app-header></app-header>
 <app-filter-form></app-filter-form>
 <app-todo-items
-  *ngFor="let x of todos; index as i"
+  *ngFor="let x of todos | filter: searchText; index as i"
   [todo]="x"
   (deleteTodo)="deleteTodo($event)"
 >
 </app-todo-items>
-<app-task-input (addTodo)="addTodo($event)"></app-task-input>
+<app-task-input (addTask)="addTask($event)"></app-task-input>

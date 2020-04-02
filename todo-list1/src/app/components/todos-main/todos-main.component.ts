@@ -54,7 +54,7 @@ export class TodosMainComponent implements OnInit {
     }
   }
 
-  addTodo(todo: Todo) {
+  addTask(todo: Todo) {
     this.todos.push(todo);
   }
 }
